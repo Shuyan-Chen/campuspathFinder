@@ -3,7 +3,6 @@ import java.util.*;
 
 public class Dijkstra {
     private Map<String, List<Edge>> graph = new HashMap<>();
-
     public void addEdge(String source, String destination, int weight) {
         graph.computeIfAbsent(source, k -> new ArrayList<>()).add(new Edge(destination, weight));
     }
